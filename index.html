@@ -1035,10 +1035,59 @@
     </div>
     <div class="projects-grid">
 
+      <!-- Featured: Dissertation -->
+      <div class="project-card featured reveal">
+        <div class="featured-left">
+          <div class="project-index">01 · FEATURED — MSC DISSERTATION</div>
+          <div class="featured-badge">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            ORIGINAL RESEARCH
+          </div>
+          <h2 class="project-title">Sentiment Spillover in<br/>Stock Forecasting</h2>
+          <p class="project-subtitle">FINANCIAL NLP · LSTM · FINBERT · MLFLOW</p>
+          <p class="project-desc">
+            Designed and conducted <strong>original research</strong> on three-class next-day directional stock forecasting across five large-cap tech stocks (AAPL, AMZN, GOOGL, MSFT, NVDA) covering 2014–2020. Processed <strong>1.4 million financial headlines</strong> through FinBERT to engineer seven daily market-wide sentiment features, demonstrating that broad market sentiment systematically predicts individual stock movements via spillover effects — a <strong>rarely examined phenomenon</strong> in financial NLP literature.
+          </p>
+          <p class="project-desc">
+            Implemented rigorous MLOps throughout: AdamW with cosine annealing, class-weighted cross-entropy, early stopping, fixed seeds, and full MLflow experiment tracking. Designed and evaluated two hybrid fusion strategies (early &amp; late fusion) with detailed root-cause analysis.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">PyTorch</span>
+            <span class="stack-tag">FinBERT</span>
+            <span class="stack-tag">HuggingFace</span>
+            <span class="stack-tag">MLflow</span>
+            <span class="stack-tag">LSTM</span>
+          </div>
+        </div>
+        <div class="featured-right">
+          <div>
+            <div class="featured-stat">
+              <span class="num">50.38%</span>
+              <span class="label">3-CLASS ACCURACY (BASELINE 33%)</span>
+            </div>
+            <div class="featured-stat">
+              <span class="num">+17pp</span>
+              <span class="label">ABOVE 33% RANDOM BASELINE</span>
+            </div>
+            <div class="featured-stat">
+              <span class="num">0.82</span>
+              <span class="label">R² VOLATILITY CORRELATION</span>
+            </div>
+          </div>
+          <div class="project-metrics">
+            <span class="metric">3-class · random = 33%</span>
+            <span class="metric">McNemar p &lt; 0.001</span>
+            <span class="metric">χ² = 18.7</span>
+            <span class="metric">MSFT 56.1%</span>
+          </div>
+        </div>
+      </div>
+
       <!-- NeonGrad -->
       <div class="project-card featured reveal">
         <div class="featured-left">
-          <div class="project-index">01 · FEATURED — PERSONAL STARTUP</div>
+          <div class="project-index">02 · FEATURED — PERSONAL STARTUP</div>
           <div class="featured-badge">
             <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
             LIVE · MAY 2026
@@ -1084,55 +1133,6 @@
             <span class="metric">Zero Polling</span>
             <span class="metric">OOP + pytest</span>
             <span class="metric">Daily at 06:00 UTC</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Featured: Dissertation -->
-      <div class="project-card featured reveal">
-        <div class="featured-left">
-          <div class="project-index">02 · FEATURED — MSC DISSERTATION</div>
-          <div class="featured-badge">
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            ORIGINAL RESEARCH
-          </div>
-          <h2 class="project-title">Sentiment Spillover in<br/>Stock Forecasting</h2>
-          <p class="project-subtitle">FINANCIAL NLP · LSTM · FINBERT · MLFLOW</p>
-          <p class="project-desc">
-            Designed and conducted <strong>original research</strong> on three-class next-day directional stock forecasting across five large-cap tech stocks (AAPL, AMZN, GOOGL, MSFT, NVDA) covering 2014–2020. Processed <strong>1.4 million financial headlines</strong> through FinBERT to engineer seven daily market-wide sentiment features, demonstrating that broad market sentiment systematically predicts individual stock movements via spillover effects — a <strong>rarely examined phenomenon</strong> in financial NLP literature.
-          </p>
-          <p class="project-desc">
-            Implemented rigorous MLOps throughout: AdamW with cosine annealing, class-weighted cross-entropy, early stopping, fixed seeds, and full MLflow experiment tracking. Designed and evaluated two hybrid fusion strategies (early &amp; late fusion) with detailed root-cause analysis.
-          </p>
-          <div class="project-stack">
-            <span class="stack-tag">Python</span>
-            <span class="stack-tag">PyTorch</span>
-            <span class="stack-tag">FinBERT</span>
-            <span class="stack-tag">HuggingFace</span>
-            <span class="stack-tag">MLflow</span>
-            <span class="stack-tag">LSTM</span>
-          </div>
-        </div>
-        <div class="featured-right">
-          <div>
-            <div class="featured-stat">
-              <span class="num">50.38%</span>
-              <span class="label">TEST ACCURACY</span>
-            </div>
-            <div class="featured-stat">
-              <span class="num">+17pp</span>
-              <span class="label">ABOVE RANDOM BASELINE</span>
-            </div>
-            <div class="featured-stat">
-              <span class="num">0.82</span>
-              <span class="label">R² VOLATILITY CORRELATION</span>
-            </div>
-          </div>
-          <div class="project-metrics">
-            <span class="metric">McNemar p &lt; 0.001</span>
-            <span class="metric">χ² = 18.7</span>
-            <span class="metric">CI [47.8%, 52.9%]</span>
-            <span class="metric">MSFT 56.1%</span>
           </div>
         </div>
       </div>
